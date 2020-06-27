@@ -30,7 +30,7 @@ my_reporting_proc = ->(node, _path, _tree) { <any output appropriate to your nee
 report = my_explorer.explore(select: my_selection_proc, report: my_reporting_proc)
 ```
 
-The output is in a structure which mimics the initial object, but with only nodes represented those values selected in the original object.
+The output is in a structure which mimics the initial object, but with only nodes representing those values selected from within the original object.
 
 In the case of arrays, unselected objects will not be reported, so the reported array in the output will only have elements representing selected nodes. If you wish to preserve the indices of elements in arrays, pass `preserve_array_indexes: true` to #explore.
 
